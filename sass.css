@@ -172,7 +172,7 @@ form label[for="second"] div {
 
 form input:checked + label[for="first"] div,
 form input:checked + label[for="second"] div {
-  background: darkgreen;
+  background: #006400;
   border: 3px white solid;
   text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
   letter-spacing: 1px;
@@ -279,7 +279,7 @@ form #contact legend {
 form #contact input {
   padding: 8px 10px 8px 35px;
   text-transform: capitalize;
-  border: none;
+  border: white 4px solid;
   outline: none;
   border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
@@ -288,7 +288,11 @@ form #contact input {
 }
 
 form #contact input[type="email"] {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACj0lEQVRIie2WTUhUURTH/+fc896YYYhQRAwkKEkO0yJoYXsjAqFF01ZqoS2iiCQ/KHmLKCtXgdCXCxetghZCQbkoKOiDtJIcoiQkI4og0KBsZu47LXR07tik4gQR81u9c7j3/M//vnvffUCJEv8b5ERHK+qM5StKGi+uCI3aMGxB37c32ZzkDjDwBtSgKiRtQmhmiqLKoc+Ka4bNgAUaFprJEoB5en0KoClAJ0LmZvR+frUq0eNV9UZNvwL1ANaG6774CBACAM8PGgMRizFGGpnNkAE/k7aNPWiBt2LBAMJtm9oNRUbA3iQbbw+xGIwtGGVnAhukyfuR6f3UQSSNyrLPVEYf4sTmrcvV9Nui28z36GNiOkTsNdnej/sz5H0FG1cqNyAj8OeeMxcmH9jysu0QeSGGhqWjuh0JuLMdl9Vl0lUdhJ48hciwLa+MZ86/HwIAf652Lm7EBjA5vQTj0xZola7am8R6VbbU7OVOeyB1duK1U6SztgFp7VeCR0y77enx++4y+ICGhR2D3T6yZM6M30lnNK5sRkOJjMjJuln3x6JrpLuuB2Luwcig9Ww8ky9aoPZClAAoaQBTYC+dezdlgdZIELul0MteLNYKaAWAD2A0pLuTz38/EUAkArIhkABwY5HjREHHufwMxgZTqKgj4lNMcjCNDTv+KJqFZVZjDkeJ2AC6tDiCJ9Mp4PrSA7P4IFYn46oYQf62Lwq+D4TWSS06x3+NvNp5Sy3Q0O2lOPggdo9T3lIbQNx3USRdQAt9uZIxJRYL9Zexu1aI+kIsFsnYvCvnPi67uOsRoG8ppD4iZIqiqRAlHAahZubI3Z3ZvONOWZoJuKSM25r/k7AKbQAv1XJzkeqVKPGP8gutZ7/Xudvv7QAAAABJRU5ErkJggg");
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACfElEQVRIie3WS2hcZRTA8d93Z2qgQh9CN6VFqIjQiih21UCgsdpFES2YasFCk3tvNH3YVV9uTHe1YLG6ENuZRBsXFhcupEpTggtfBVN1LUQUuiu2GRD7sJmvi2ScpOmMwWQ2pf/dPedw/pxzud/9uM+9TpjxlHpItKxFpnFlV2aKu61Q9InouZZI65wzYYdBl4ug4H1RAauVXGqJsttqRR9LvIftk8FcRW5DS4TTSbXLjEOCIFoiOqzP8pZJey3FASxFSKalHvWPizJPL7g09bgJPwrW1kLTxdtwGt/I7Vswae4VwQXB16Jts8XBhJJ+0cuit2SG7PDg/xb2K0odFQ1gr5LXJG7OFtco+0L0FB7TZlR3fT1zptsKl5wTbFfVoWTwzpLZ4kn5H27pwLCCC/L6iv6TVLuCX3DdIk8aMHq3sruL4SPXlezDHtGgzIe6PNBUmukVjIiGrPK8D1xtVNpYXOdX3ECXJUb0WDmrotdiudN4G1FiTL9qs6bNxalncF70rlvWCP6U+GkqXpM+IvoeT0isF70kOiGzu1nrYsNM5gV8Kjik5MRUdKvUfsFZmR9QUbUZZyR2OelvjOnxosTncm1OOT73iTOv4gx2OfWvFKKyY6rWis4KRrFRyc4p6SQDhrFFdETmzUazBZkotw7kXpe5JtXVcBtzJdUuV5E6OtV7nUx0x5FJ7qDoHdFWZZ/NW1z2nahTkMkcm56qv+OqI4JNEpud9O28pTVKLko9Kxhm5lkdURF0SHQuqLRG2c8SnaL1qCDWJv4SD6s2/uDnTdVfGMPv1FadeEPVEH6TtUxN9JXC5J9v5mWvz3I3WnQZaHO12RF6n3uP2/DssOnD3Us8AAAAAElFTkSuQmCC");
+}
+
+form #contact input[type="telephone"] {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAADSElEQVRIie2VyW8bZQDF32yeLeMZ23Fm4iVuotg1VQgEkCqWCgkh4FSVQw/8ASCoeumFe/+A3hC39sCJckBiuaIC4tIDoi0QkU2mcRInXiYej2fzeGY4oERNZIcGbCRQ3/F93/d+8zTfAjzR/13USYMzpdIropa4onCZSqdT3/9Xvii7UHw/eWF6j3mHjdQXCg8z5fJLo8wf2PhMqVR2kvbNVnlHI0MS3ey+zLWFN5T49F2z2ayOAkwOMr1YcEMv7mYAgOhTQEiguVjN+5L9aa5YPD8W8Pz8PBtw/tmQDgAA/oQLxmIRMzk0F6v5vhh8NBawQ1EXu9Pt7KNeL+4gIgDW4EfBHAwGFc33+R533PYnXMgb6i5tUVfHAuY87qa0nTqygYiIwOTP+S3WYi5vra3dHQt4Y+NBnTX4e5RHH3rpB7nNmCle3lxd/WEU0IFgACBc4UpiTds8NCLS531/eVRQYMg5NvW9TkJWC724+3zA+VRPcpVYS1bNhv7lqMADGwOAxsU/TK5ov5IBCV/0SE923ioUF54aFXjoXV2r1UJZVO/EHPZte6oT95JWXGiIFyRq7hPTrPljAwOAud9sKfEpg/Tpl91UV3AVOy12Yq9KzNztQfBcsXhenFG+kLTEe4o0eb+j69t/CwwAZkP/KcVlpIiOnnVTXd5N2nnRYi4mpMz3ht5oHMzLlssv9mT3s/rSw3I3086whvjmSXf7X4IBwGzqd1JMtgAKRTfV5S3NUCmXuZSIq+fS0ux3gqYs+ZJzu7lYnSH7FGibRTevn/iwEI8DPlDmXOm6pbU/MObqaQBgLDZMrGkVkBHdeLpaiIjoz9CQANNl4Usepu7PbMb2pNeq1V82Tt34sHmj9W2Kn26xhvCcm+rKAdsnLM1IWqqhHKlAAFSPAe3RsCdNmW+LttnQv3k0a+hxGqad5fVbbH3idfXHM/fYtjB0d/ckBwAgV6Z0uk99fXz8VI0PZO43W2dzc7fCXVZhDSHjybYc0eGROWSfgvJ7eidmCde3llc/P55xqn88SLncM9kwYX3sSc6SmWvlaSfmTtSUbcphVjmbvlaprKwMWvePwQeanV1Qe5z3LkLyNz4IvlpfX/dGlf1E/039AWTtSH9NjxY4AAAAAElFTkSuQmCC");
 }
 
 /* 4 - TEXT INPUT STYLES & FIELDSETS */
