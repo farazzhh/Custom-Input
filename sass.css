@@ -161,6 +161,8 @@ form label[for="second"] {
 
 form label[for="first"] div,
 form label[for="second"] div {
+  -webkit-filter: blur(0.5px);
+          filter: blur(0.5px);
   width: 16px;
   height: 16px;
   border-radius: 50%;

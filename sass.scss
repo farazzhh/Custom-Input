@@ -84,7 +84,6 @@ form {
   flex-wrap: wrap;
 
   //   title of Card area
-  
 
   //   Radio Area
   #radio {
@@ -127,6 +126,7 @@ form {
     gap: 4px;
     cursor: pointer;
     div {
+      filter: blur(0.5px);
       width: 16px;
       height: 16px;
       border-radius: 50%;
@@ -167,12 +167,12 @@ form {
       box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
     }
     legend {
-    padding: 2px 6px;
-    background: whitesmoke;
-    font-size: 24px;
-    border-radius: 5px;
-    border: 1px rgba(0, 128, 0, 0.4) solid;
-  }
+      padding: 2px 6px;
+      background: whitesmoke;
+      font-size: 24px;
+      border-radius: 5px;
+      border: 1px rgba(0, 128, 0, 0.4) solid;
+    }
 
     input {
       width: 0;
@@ -208,20 +208,20 @@ form {
       box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
     }
     legend {
-    padding: 2px 6px;
-    background: whitesmoke;
-    font-size: 24px;
-    border-radius: 5px;
-    border: 1px rgba(0, 128, 0, 0.4) solid;
-  }
+      padding: 2px 6px;
+      background: whitesmoke;
+      font-size: 24px;
+      border-radius: 5px;
+      border: 1px rgba(0, 128, 0, 0.4) solid;
+    }
 
-  input{
+    input {
       padding: 5px 10px 5px 40px;
       border: none;
       outline: none;
       border-radius: 4px;
       box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
-  }
+    }
   }
 }
 /* 4 - TEXT INPUT STYLES & FIELDSETS */
