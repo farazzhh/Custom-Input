@@ -14,7 +14,6 @@ body {
   font-family: "Glory", sans-serif;
   padding: 20px;
   width: 100vw;
-  overflow: hidden;
 }
 
 a {
@@ -30,7 +29,7 @@ header a {
   position: relative;
   padding: 0 20px;
   margin: 0 auto;
-  width: 250px;
+  width: 300px;
   height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,8 +80,8 @@ header a #image-wrapper {
   padding: 5px;
   border-radius: 50%;
   position: absolute;
-  top: -10%;
-  right: -30px;
+  top: -15%;
+  right: -15px;
   border: 1px rgba(0, 128, 0, 0.4) solid;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
           box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
@@ -96,6 +95,8 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -295,6 +296,62 @@ form #contact input[type="email"] {
 
 form #contact input[type="telephone"] {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAACpklEQVRIie2UvW/TQBTAX2LHn6kTOw6xk7Q1bRClUUBtxNABIcGAuiLBxoDgH4CJgYUPCbGwIHVCYgOBxEIHVImBjSkgKlE+1Eqhapukbew09sXxR2ymQNSkVZVk7G+7d+/e7+707gCOGQaKMqUoypQyjFpYr6Ccy9ytj2ovTcG8xbMyGNva56FKktOZGZSqLRhpTXJGmmGfaM0KZMobRNQlYVLcgjpVOu9jHmA2Bg5rMz7RmhXptKZX1C/9SIKdg3w+H3JZ+wwEfAAAcGkHQogEM2aILmlf7+sY+yWq2pw2YyjdGWvyCLj12B5uEW+HIhEEaoWusn86Y2w5UqW0kYdby6svhiIpFAoOYVBLeDPkAQAwuyP1yLr4tPRt9Vm/gi4JAABWTdzn1xIrAAA2a4X9gC8MIgDo0V31+obLReLIo1qXrEiDJg1a5in5lV6tNgaVdSGdm3iN3cC9wM2gL80qnwCu9Xy4R+HAhRw28YE28StIqietaCOVCKJJo6K9BwC/My95NnObHg8/4QSRNra1nu/oQImul5w4mV7ETXLeSGmSxaPTCXzsghQ+uaSq5QYAgJzL3NHHdh9omUoOMH/uoJ/h0Cuo1XYMXkx+pFX6siHXZCTvTXqOfzUakZLcCX5GH6/eM+SaSNRpMEWDAczv+QUFDpO0UZSsZArG4m52M98i3QBuEi0Ckagh6lw7h6wx4DI2sJt8WViLzRWLP4vtua4W7kWx+L2MlcWL8eWxN8wOt+fSNtYpAACwog0IIRLwVrBr40fuGF0vOUZFeyeGRjfpGnPK5kzRw73/Bf0AMDtcma7wzzd+/1rsXHuk69qPoiiUzWGPLdacb4ooTansFo6IH5iNP9paWf26P78vSZtsNkvozWAuHiWWC4WCM0itY/7xF3keDBegt3uFAAAAAElFTkSuQmCC");
+}
+
+form #listbox {
+  background-color: #ebe9e9;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 20px 50px;
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  max-width: 300px;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+form #listbox:hover {
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+  -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
+          box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
+}
+
+form #listbox legend {
+  padding: 2px 6px;
+  background: whitesmoke;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+}
+
+form #listbox select {
+  border: none;
+  outline: none;
+  padding: 10px 50px 10px 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 200px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABjElEQVRIie3TPW8TQRDG8d/aoHRAQxNLQRaCD2C6pIIG8VJTUOAgO+nyDZBoKNMjcaQibtKAhETcAA4iobMQPQUgQUuDlAYvhc+Oz5xz5w6JPN3Ozsx/n51dTvRfqppZtT3U8FjDK30/5+7WVtfwQcN5fb1RuJJJCj7hMnra6nMD6OGS6OPkVhaSeC64i0XsWXexFKDlAl6jJrpvy4vs2fO05o6ogx8qrnri87GA4C2WUsCz6ZR8SFlQCQDT17VhwbqzILEjWMWigTd/zaitLniHJUFzDFh1zoaF2ZBDm6Kv1iynoI6giZrJx3A05JqgKdFJ3S877YtDm7MhwbYoiLrHgK7NBERdURBsZ9tOa9h8V1QV3JLYS+OjGZ3C78wMZtXkOhme/MDATQxEL7WspPEdURPfRffGgJaVsYPo+jQg30meI257evSDMzlRF5U8B8WQIlBJQDFkFmgOQDkIw3sPdtPVAzwC0Q1b9ovKy0GYdHQGv8o4GKlanJKq75sr4x/eknhfuvZE/5z+AF4NkFWQla/DAAAAAElFTkSuQmCC") no-repeat 95% center;
+  background-color: whitesmoke;
+  color: black;
+  border: whitesmoke 4px solid;
 }
 
 /* 4 - TEXT INPUT STYLES & FIELDSETS */
