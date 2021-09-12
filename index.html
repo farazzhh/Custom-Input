@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100;200;300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="sass.css" rel="stylesheet" type="text/css" />
 
   </head>
   <body>
@@ -18,11 +18,13 @@
     </header>
     <form>
       <!-- Gender -->
-      <p>You are a...</p>
-      <input type="radio" id="male" name="gender" />
-      <label for="male">Male</label><br/>
-      <input type="radio" id="female" name="gender" />
-      <label for="female">Female</label>
+      <div id="radio">
+        <p>Input RadioType</p>
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label><br/>
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label>
+      </div>
 
       <!-- Interests -->
       <p>Who is interested in...</p>
