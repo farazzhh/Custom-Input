@@ -216,11 +216,17 @@ form {
     }
 
     input {
-      padding: 5px 10px 5px 40px;
+      padding: 8px 10px 8px 35px;
+      text-transform: capitalize;
       border: none;
       outline: none;
       border-radius: 4px;
       box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
+      background-repeat: no-repeat;
+    }
+    input[type="email"]{
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACj0lEQVRIie2WTUhUURTH/+fc896YYYhQRAwkKEkO0yJoYXsjAqFF01ZqoS2iiCQ/KHmLKCtXgdCXCxetghZCQbkoKOiDtJIcoiQkI4og0KBsZu47LXR07tik4gQR81u9c7j3/M//vnvffUCJEv8b5ERHK+qM5StKGi+uCI3aMGxB37c32ZzkDjDwBtSgKiRtQmhmiqLKoc+Ka4bNgAUaFprJEoB5en0KoClAJ0LmZvR+frUq0eNV9UZNvwL1ANaG6774CBACAM8PGgMRizFGGpnNkAE/k7aNPWiBt2LBAMJtm9oNRUbA3iQbbw+xGIwtGGVnAhukyfuR6f3UQSSNyrLPVEYf4sTmrcvV9Nui28z36GNiOkTsNdnej/sz5H0FG1cqNyAj8OeeMxcmH9jysu0QeSGGhqWjuh0JuLMdl9Vl0lUdhJ48hciwLa+MZ86/HwIAf652Lm7EBjA5vQTj0xZola7am8R6VbbU7OVOeyB1duK1U6SztgFp7VeCR0y77enx++4y+ICGhR2D3T6yZM6M30lnNK5sRkOJjMjJuln3x6JrpLuuB2Luwcig9Ww8ky9aoPZClAAoaQBTYC+dezdlgdZIELul0MteLNYKaAWAD2A0pLuTz38/EUAkArIhkABwY5HjREHHufwMxgZTqKgj4lNMcjCNDTv+KJqFZVZjDkeJ2AC6tDiCJ9Mp4PrSA7P4IFYn46oYQf62Lwq+D4TWSS06x3+NvNp5Sy3Q0O2lOPggdo9T3lIbQNx3USRdQAt9uZIxJRYL9Zexu1aI+kIsFsnYvCvnPi67uOsRoG8ppD4iZIqiqRAlHAahZubI3Z3ZvONOWZoJuKSM25r/k7AKbQAv1XJzkeqVKPGP8gutZ7/Xudvv7QAAAABJRU5ErkJggg");
+        
     }
   }
 }
