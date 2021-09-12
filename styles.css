@@ -1,0 +1,75 @@
+/* 1 - BASE FORM STYLES */
+body {
+  background-color: lightgray;
+  color: #171717;
+  font-family: "Glory", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+header {
+  width: 100vw;
+}
+
+div {
+  margin: 0 auto;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  color: darkgreen;
+  border: #fff 1px solid;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 15px;
+  transition: all 0.2s ;
+}
+
+div:hover {
+  box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
+    border: 1px rgba(0, 128, 0, 0.4) solid;
+}
+header img {
+  width: 200px;
+}
+
+form p {
+  font-size: 20px;
+}
+
+/* 2 - RADIOBOX STYLES  */
+input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+label[for="male"],
+label[for="female"] {
+  margin-bottom: 10px;
+  padding-left: 26px;
+  font-weight: 600;
+  display: inline-block;
+  background-image: url("https://img.icons8.com/material-outlined/20/000000/checked-2--v2.png");
+  background-repeat: no-repeat;
+  line-height: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: -0.44px;
+}
+
+input:checked + label[for="male"],
+input:checked + label[for="female"] {
+  background-image: url("https://img.icons8.com/material-outlined/20/000000/checked-2--v1.png");
+  text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
+  letter-spacing: 1px;
+}
+
+/* 3 - CHECKBOX STYLES  */
+
+/* 4 - TEXT INPUT STYLES & FIELDSETS */
+
+/* 5 - SELECT BOXES */
+
+/* 6 - INPUT VALIDATION STYLES */
