@@ -42,7 +42,7 @@ header {
       box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
       span {
         opacity: 1;
-        color: darkgreen;
+        color: #006400;
       }
       #image-wrapper {
         box-shadow: rgba(0, 128, 0, 0.3) 0 0 5px;
@@ -82,9 +82,20 @@ form {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  & > div {
+
+  //   title of Card area
+  legend {
+    padding: 2px 6px;
+    background: whitesmoke;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px rgba(0, 128, 0, 0.4) solid;
+  }
+
+  //   Radio Area
+  #radio {
     background-color: rgb(235, 233, 233);
-    margin: 30px auto;
+    backdrop-filter: blur(10px);
     padding: 20px 50px;
     border: 1px rgba(255, 255, 255, 0.8) solid;
     max-width: 300px;
@@ -100,12 +111,7 @@ form {
       box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
     }
   }
-  p {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
 
-  /* 2 - RADIOBOX STYLES  */
   input[type="radio"] {
     opacity: 0;
     width: 0;
@@ -131,14 +137,46 @@ form {
   input:checked + label[for="second"] {
     div {
       background: darkgreen;
-
-      // background-image: url("https://img.icons8.com/material-outlined/20/000000/checked-2--v1.png");
+      border: 3px white solid;
       text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
       letter-spacing: 1px;
     }
   }
-  .input-labet-wrap {
+  .input-label-wrap {
     margin-bottom: 15px;
+  }
+
+  // Checkbob area
+  #checkbox {
+    background-color: rgb(235, 233, 233);
+    backdrop-filter: blur(10px);
+    padding: 20px 50px;
+    border: 1px rgba(255, 255, 255, 0.8) solid;
+    max-width: 300px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    &:hover {
+      border: 1px rgba(0, 128, 0, 0.4) solid;
+      box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
+    }
+    input {
+      width: 0;
+      opacity: 0;
+    }
+    label {
+      cursor: pointer;
+      padding-left: 22px;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAAAj0lEQVQ4je3UQQ7BUBAG4I8NSxaqid6BA7kH9xH34Q4qaUm6QSwttFK7EV32X71MZr7Vm6GjDFrvDGtMgrMV9ji1oQxHjFAEoTmeWCJvilvckASRBrpjA8O6mOCK8geowKUGP9Df6aEe6hIqMVP/0mDSeqbge2kPGIsvbYoHVsjbZ2ThfUamQajCDudgfywv818XI9QZLDYAAAAASUVORK5CYII");
+      background-repeat: no-repeat;
+    }
+    input:checked + label {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAAA3ElEQVQ4jc3SMUrEQBQG4G+yKcxewMLjiLIXsLGRVQQLQRAsbG0jHsBreAE7i8BewVJs7JSVXTYWMTGgmY1p9K8yebxvXjLDf0tonk5sWbgQZD07XwW5W0+QNoUKOes9QqmwcFUvk9YO/SapUljaldj8DvXPTGliZCpxPhSaKe3gQHDTLvwG6kRi0APuW+vC0rZg+hMSgx5lJrhT/9jUEa67xk073u+be5HZ827DyDHyLiQGUTo1N8az4DKGxKEKO1wH1Blyj9ZCbwP6m56vT1vJP9lxb2QVP4C/zQd16S6S3PYq1QAAAABJRU5ErkJggg");
+    }
   }
 }
 /* 3 - CHECKBOX STYLES  */

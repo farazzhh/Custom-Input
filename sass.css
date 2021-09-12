@@ -57,7 +57,7 @@ header a:hover {
 
 header a:hover span {
   opacity: 1;
-  color: darkgreen;
+  color: #006400;
 }
 
 header a:hover #image-wrapper {
@@ -99,12 +99,20 @@ form {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /* 2 - RADIOBOX STYLES  */
 }
 
-form > div {
+form legend {
+  padding: 2px 6px;
+  background: whitesmoke;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+}
+
+form #radio {
   background-color: #ebe9e9;
-  margin: 30px auto;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   padding: 20px 50px;
   border: 1px rgba(255, 255, 255, 0.8) solid;
   max-width: 300px;
@@ -126,15 +134,10 @@ form > div {
   border-radius: 4px;
 }
 
-form > div:hover {
+form #radio:hover {
   border: 1px rgba(0, 128, 0, 0.4) solid;
   -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
           box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
-}
-
-form p {
-  font-size: 24px;
-  margin-bottom: 20px;
 }
 
 form input[type="radio"] {
@@ -168,12 +171,60 @@ form label[for="second"] div {
 form input:checked + label[for="first"] div,
 form input:checked + label[for="second"] div {
   background: darkgreen;
+  border: 3px white solid;
   text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
   letter-spacing: 1px;
 }
 
-form .input-labet-wrap {
+form .input-label-wrap {
   margin-bottom: 15px;
+}
+
+form #checkbox {
+  background-color: #ebe9e9;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 20px 50px;
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  max-width: 300px;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+form #checkbox:hover {
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+  -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
+          box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
+}
+
+form #checkbox input {
+  width: 0;
+  opacity: 0;
+}
+
+form #checkbox label {
+  cursor: pointer;
+  padding-left: 22px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAAAj0lEQVQ4je3UQQ7BUBAG4I8NSxaqid6BA7kH9xH34Q4qaUm6QSwttFK7EV32X71MZr7Vm6GjDFrvDGtMgrMV9ji1oQxHjFAEoTmeWCJvilvckASRBrpjA8O6mOCK8geowKUGP9Df6aEe6hIqMVP/0mDSeqbge2kPGIsvbYoHVsjbZ2ThfUamQajCDudgfywv818XI9QZLDYAAAAASUVORK5CYII");
+  background-repeat: no-repeat;
+}
+
+form #checkbox input:checked + label {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAAA3ElEQVQ4jc3SMUrEQBQG4G+yKcxewMLjiLIXsLGRVQQLQRAsbG0jHsBreAE7i8BewVJs7JSVXTYWMTGgmY1p9K8yebxvXjLDf0tonk5sWbgQZD07XwW5W0+QNoUKOes9QqmwcFUvk9YO/SapUljaldj8DvXPTGliZCpxPhSaKe3gQHDTLvwG6kRi0APuW+vC0rZg+hMSgx5lJrhT/9jUEa67xk073u+be5HZ827DyDHyLiQGUTo1N8az4DKGxKEKO1wH1Blyj9ZCbwP6m56vT1vJP9lxb2QVP4C/zQd16S6S3PYq1QAAAABJRU5ErkJggg");
 }
 
 /* 3 - CHECKBOX STYLES  */
