@@ -11,15 +11,18 @@
 
 <body>
   <header>
-    <a href="https://github.com/farazzhh" target="blank">
-      <div>
-        <img src="./img/logo square.png" alt="logo">
+    <card>
+      <a href="https://github.com/farazzhh/Custom-Input" target="blank">
+        <div id="image-wrapper">
+          <img src="./img/logo square.png" alt="logo">
+        </div>
         <div>
           <h1>FaraZZHH</h1><br />
-          <span>Let's go to <br />github's page</span>
+          <span>Custom Input Element</span><br />
+          <span>Let's check it on github</span>
         </div>
-      </div>
-    </a>
+      </a>
+    </card>
   </header>
 
   <form>
@@ -29,6 +32,8 @@
       <div>
         <input type="radio" id="male" name="gender" />
         <label for="male">Male</label>
+      </div>
+      <div>
         <input type="radio" id="female" name="gender" />
         <label for="female">Female</label>
       </div>
@@ -38,38 +43,38 @@
     <div>
       <p>Who is interested in...</p>
       <div class="input-labet-wrap">
-      <input type="checkbox" id="web" />
-      <label for="web">Web development</label><br />
+        <input type="checkbox" id="web" />
+        <label for="web">Web development</label><br />
       </div>
-      <div  class="input-labet-wrap">
-      <input type="checkbox" id="photoshop" />
-      <label for="photoshop">Photoshop</label><br />
-      </div >
-      <div  class="input-labet-wrap">
-      <input type="checkbox" id="madona" />
-      <label for="madona">Singing Madona Songs</label>
+      <div class="input-labet-wrap">
+        <input type="checkbox" id="photoshop" />
+        <label for="photoshop">Photoshop</label><br />
+      </div>
+      <div class="input-labet-wrap">
+        <input type="checkbox" id="madona" />
+        <label for="madona">Singing Madona Songs</label>
       </div>
     </div>
 
     <!-- Contact details -->
     <div>
-    <fieldset>
-      <legend>Contact Info</legend>
-      <input type="email" placeholder="Email" required />
-      <span class="tick"></span>
-      <input type="telephone" placeholder="Phone number" required />
-      <span class="tick"></span>
-    </fieldset>
+      <fieldset>
+        <legend>Contact Info</legend>
+        <input type="email" placeholder="Email" required />
+        <span class="tick"></span>
+        <input type="telephone" placeholder="Phone number" required />
+        <span class="tick"></span>
+      </fieldset>
     </div>
 
     <!-- Preferred -->
     <div>
-    <p>How would you like to be contacted?</p>
-    <select>
-      <option>By email</option>
-      <option>By telephone</option>
-    </select>
-    <input type="submit" value="Become a Ninja" />
+      <p>How would you like to be contacted?</p>
+      <select>
+        <option>By email</option>
+        <option>By telephone</option>
+      </select>
+      <input type="submit" value="Become a Ninja" />
     </div>
   </form>
 </body>
