@@ -108,7 +108,7 @@ form #radio {
           backdrop-filter: blur(10px);
   padding: 20px 50px;
   border: 1px rgba(255, 255, 255, 0.8) solid;
-  max-width: 300px;
+  min-width: 300px;
   min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,7 +189,7 @@ form #checkbox {
           backdrop-filter: blur(10px);
   padding: 20px 50px;
   border: 1px rgba(255, 255, 255, 0.8) solid;
-  max-width: 300px;
+  min-width: 300px;
   min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,7 +244,7 @@ form #contact {
           backdrop-filter: blur(10px);
   padding: 20px 50px;
   border: 1px rgba(255, 255, 255, 0.8) solid;
-  max-width: 300px;
+  min-width: 300px;
   min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,7 +304,7 @@ form #listbox {
           backdrop-filter: blur(10px);
   padding: 20px 50px;
   border: 1px rgba(255, 255, 255, 0.8) solid;
-  max-width: 300px;
+  min-width: 300px;
   min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,7 +340,7 @@ form #listbox legend {
 form #listbox select {
   border: none;
   outline: none;
-  padding: 10px 50px 10px 10px;
+  padding: 7px 50px 7px 10px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -348,7 +348,7 @@ form #listbox select {
   border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
           box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABjElEQVRIie3TPW8TQRDG8d/aoHRAQxNLQRaCD2C6pIIG8VJTUOAgO+nyDZBoKNMjcaQibtKAhETcAA4iobMQPQUgQUuDlAYvhc+Oz5xz5w6JPN3Ozsx/n51dTvRfqppZtT3U8FjDK30/5+7WVtfwQcN5fb1RuJJJCj7hMnra6nMD6OGS6OPkVhaSeC64i0XsWXexFKDlAl6jJrpvy4vs2fO05o6ogx8qrnri87GA4C2WUsCz6ZR8SFlQCQDT17VhwbqzILEjWMWigTd/zaitLniHJUFzDFh1zoaF2ZBDm6Kv1iynoI6giZrJx3A05JqgKdFJ3S877YtDm7MhwbYoiLrHgK7NBERdURBsZ9tOa9h8V1QV3JLYS+OjGZ3C78wMZtXkOhme/MDATQxEL7WspPEdURPfRffGgJaVsYPo+jQg30meI257evSDMzlRF5U8B8WQIlBJQDFkFmgOQDkIw3sPdtPVAzwC0Q1b9ovKy0GYdHQGv8o4GKlanJKq75sr4x/eknhfuvZE/5z+AF4NkFWQla/DAAAAAElFTkSuQmCC") no-repeat 95% center;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVQ4je3Rv0qbURwG4Oc7IujQawnGDNZOXYQWqtAbqH6e7MYOrXcgiGSXVARHOzl1UBxEcShRBx0ctTdQi9YgJC6aRD/FRJzEdzzv+T2cP7zm+VI0LDqWynU8k8qJjhUN3yyFZnmpiiPBekdoKidYx9H17B1wyYU3PmFXsCFVeARbw4GaMUsubqoks7mk3z+rGFQ3YtHvB7BDNR8tO2uvWycc1ycaUvZfMIaq4Net67euuS/4YNmZ1Fvj+rJgrzy2TSpZcC4YxV7zTVvYnmDUgnOTSoKt61nQ0wSrTgw4lZg34FTFpoKfGt5LfJP4ksES8xq+qljJgrBr51607p3EH8HnDPZD+f6fa080JWqIvnfVdY12gPU8VKjakfcXc/Jq8gooY0bFbHena0/RtKguqiuafjrUnmhCNPE82IvLFbR4bTtWgIlSAAAAAElFTkSuQmCC") no-repeat 95% center;
   background-color: whitesmoke;
   color: black;
   border: whitesmoke 4px solid;
