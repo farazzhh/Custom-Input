@@ -10,13 +10,14 @@ body {
   color: #171717;
   font-family: "Glory", sans-serif;
   padding: 20px;
+  width: 100vw;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
 }
 
 header {
-  width: 100vw;
   margin: 50px 0;
   text-align: center;
 
