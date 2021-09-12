@@ -13,7 +13,6 @@ body {
   color: #171717;
   font-family: "Glory", sans-serif;
   padding: 20px;
-  width: 100vw;
 }
 
 a {
@@ -27,9 +26,9 @@ header {
 
 header a {
   position: relative;
-  padding: 0 20px;
+  padding: 0 15px;
   margin: 0 auto;
-  width: 300px;
+  width: 260px;
   height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +63,12 @@ header a:hover #image-wrapper {
           box-shadow: rgba(0, 128, 0, 0.3) 0 0 5px;
 }
 
+@media all and (max-width: 480px) {
+  header a {
+    width: 240px;
+  }
+}
+
 header a div h1 {
   margin-bottom: 20px;
 }
@@ -88,27 +93,28 @@ header a #image-wrapper {
 }
 
 header a #image-wrapper img {
-  width: 100px;
+  width: 80px;
 }
 
-form {
+section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-form #radio {
+section #radio {
   background-color: #ebe9e9;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  padding: 20px 50px;
+  padding: 20px 30px;
   border: 1px rgba(255, 255, 255, 0.8) solid;
-  min-width: 300px;
+  width: 300px;
   min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,13 +133,13 @@ form #radio {
   border-radius: 4px;
 }
 
-form #radio:hover {
+section #radio:hover {
   border: 1px rgba(0, 128, 0, 0.4) solid;
   -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
           box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
 }
 
-form legend {
+section legend {
   padding: 2px 6px;
   background: whitesmoke;
   font-size: 24px;
@@ -141,14 +147,14 @@ form legend {
   border: 1px rgba(0, 128, 0, 0.4) solid;
 }
 
-form input[type="radio"] {
+section input[type="radio"] {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-form label[for="first"],
-form label[for="second"] {
+section label[for="first"],
+section label[for="second"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,8 +166,8 @@ form label[for="second"] {
   cursor: pointer;
 }
 
-form label[for="first"] div,
-form label[for="second"] div {
+section label[for="first"] div,
+section label[for="second"] div {
   -webkit-filter: blur(0.5px);
           filter: blur(0.5px);
   width: 16px;
@@ -171,25 +177,25 @@ form label[for="second"] div {
   border: 3px white solid;
 }
 
-form input:checked + label[for="first"] div,
-form input:checked + label[for="second"] div {
+section input:checked + label[for="first"] div,
+section input:checked + label[for="second"] div {
   background: #006400;
   border: 3px white solid;
   text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
   letter-spacing: 1px;
 }
 
-form .input-label-wrap {
+section .input-label-wrap {
   margin-bottom: 15px;
 }
 
-form #checkbox {
+section #checkbox {
   background-color: #ebe9e9;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  padding: 20px 50px;
+  padding: 20px 30px;
   border: 1px rgba(255, 255, 255, 0.8) solid;
-  min-width: 300px;
+  width: 300px;
   min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,13 +214,13 @@ form #checkbox {
   border-radius: 4px;
 }
 
-form #checkbox:hover {
+section #checkbox:hover {
   border: 1px rgba(0, 128, 0, 0.4) solid;
   -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
           box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
 }
 
-form #checkbox legend {
+section #checkbox legend {
   padding: 2px 6px;
   background: whitesmoke;
   font-size: 24px;
@@ -222,29 +228,29 @@ form #checkbox legend {
   border: 1px rgba(0, 128, 0, 0.4) solid;
 }
 
-form #checkbox input {
+section #checkbox input {
   width: 0;
   opacity: 0;
 }
 
-form #checkbox label {
+section #checkbox label {
   cursor: pointer;
   padding-left: 22px;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAAAj0lEQVQ4je3UQQ7BUBAG4I8NSxaqid6BA7kH9xH34Q4qaUm6QSwttFK7EV32X71MZr7Vm6GjDFrvDGtMgrMV9ji1oQxHjFAEoTmeWCJvilvckASRBrpjA8O6mOCK8geowKUGP9Df6aEe6hIqMVP/0mDSeqbge2kPGIsvbYoHVsjbZ2ThfUamQajCDudgfywv818XI9QZLDYAAAAASUVORK5CYII");
   background-repeat: no-repeat;
 }
 
-form #checkbox input:checked + label {
+section #checkbox input:checked + label {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAAA3ElEQVQ4jc3SMUrEQBQG4G+yKcxewMLjiLIXsLGRVQQLQRAsbG0jHsBreAE7i8BewVJs7JSVXTYWMTGgmY1p9K8yebxvXjLDf0tonk5sWbgQZD07XwW5W0+QNoUKOes9QqmwcFUvk9YO/SapUljaldj8DvXPTGliZCpxPhSaKe3gQHDTLvwG6kRi0APuW+vC0rZg+hMSgx5lJrhT/9jUEa67xk073u+be5HZ827DyDHyLiQGUTo1N8az4DKGxKEKO1wH1Blyj9ZCbwP6m56vT1vJP9lxb2QVP4C/zQd16S6S3PYq1QAAAABJRU5ErkJggg");
 }
 
-form #contact {
+section #contact {
   background-color: #ebe9e9;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  padding: 20px 50px;
+  padding: 20px 30px;
   border: 1px rgba(255, 255, 255, 0.8) solid;
-  min-width: 300px;
+  width: 300px;
   min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,13 +269,13 @@ form #contact {
   border-radius: 4px;
 }
 
-form #contact:hover {
+section #contact:hover {
   border: 1px rgba(0, 128, 0, 0.4) solid;
   -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
           box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
 }
 
-form #contact legend {
+section #contact legend {
   padding: 2px 6px;
   background: whitesmoke;
   font-size: 24px;
@@ -277,7 +283,7 @@ form #contact legend {
   border: 1px rgba(0, 128, 0, 0.4) solid;
 }
 
-form #contact input {
+section #contact input {
   padding: 6px 10px 5px 35px;
   text-transform: capitalize;
   background: whitesmoke;
@@ -290,21 +296,22 @@ form #contact input {
   letter-spacing: 0.3px;
 }
 
-form #contact input[type="email"] {
+section #contact input[type="email"] {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAACDElEQVRIie3VPUhVYRzH8c9zvBQO0gs0RERhEE0JFRFFUqG9QFsILUV2jpGYQxFUUy5NDSEFivdqDdEiBUUJ9jJENEQZOBVBTkpBkBpRYHlOw72G1DUkHRr6juf/5/d9nv9zeB7+868RwFGbBFcEa+ctOfNG0KJgIGhQYZEhQasx9/SanLOgmLkf7catiSxVLZNaoW9eBNBr0ri7SC22JpJaIFhl2CPHLJ8XSaNlFrmP1VILotLnQcEtqRea1M1JcMwGFZ7JPMcgTEkyee04KNMj0abtZ232JA5L3RE063YW6XRJkYInJm3ENsNua7ZkVuGtFop14aRUrbz+6eXfV3vVB+P2YsCEl2Kb/yhotNIXjwWVItv0GPq1pfxIek0qaMN1wWOJuGxfol6FlxhWcEiXL+XaZp57k32CWCbGCYkeJ1WWqkHsHPKC44IasRMzRZWXxBpk8iL7dbuhylakPhmUuCTxVFAnZ7O8m3J2CFrETpeLy5URHBWcR70ur8AlX5FIbMQW9Cl4iAx0GnHETjkPJBYquDCzJNGCUyK7dHn72wIKBjBQdvfXvNes1jf9YlWlX/iXcTU5gxY5tWUFs6HDqO92Y4cmF5Uu4EhkAutlDpiwXaeRvxJMcc2YCntktqJGZCLy0RDeoUO18TkJphj1WZDHiDFvi+9J8UAvY928SIq8RmvpHP/zj/EDm4WUCEXu+1gAAAAASUVORK5CYII=");
+  margin-bottom: 20px;
 }
 
-form #contact input[type="telephone"] {
+section #contact input[type="telephone"] {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAACpklEQVRIie2UvW/TQBTAX2LHn6kTOw6xk7Q1bRClUUBtxNABIcGAuiLBxoDgH4CJgYUPCbGwIHVCYgOBxEIHVImBjSkgKlE+1Eqhapukbew09sXxR2ymQNSkVZVk7G+7d+/e7+707gCOGQaKMqUoypQyjFpYr6Ccy9ytj2ovTcG8xbMyGNva56FKktOZGZSqLRhpTXJGmmGfaM0KZMobRNQlYVLcgjpVOu9jHmA2Bg5rMz7RmhXptKZX1C/9SIKdg3w+H3JZ+wwEfAAAcGkHQogEM2aILmlf7+sY+yWq2pw2YyjdGWvyCLj12B5uEW+HIhEEaoWusn86Y2w5UqW0kYdby6svhiIpFAoOYVBLeDPkAQAwuyP1yLr4tPRt9Vm/gi4JAABWTdzn1xIrAAA2a4X9gC8MIgDo0V31+obLReLIo1qXrEiDJg1a5in5lV6tNgaVdSGdm3iN3cC9wM2gL80qnwCu9Xy4R+HAhRw28YE28StIqietaCOVCKJJo6K9BwC/My95NnObHg8/4QSRNra1nu/oQImul5w4mV7ETXLeSGmSxaPTCXzsghQ+uaSq5QYAgJzL3NHHdh9omUoOMH/uoJ/h0Cuo1XYMXkx+pFX6siHXZCTvTXqOfzUakZLcCX5GH6/eM+SaSNRpMEWDAczv+QUFDpO0UZSsZArG4m52M98i3QBuEi0Ckagh6lw7h6wx4DI2sJt8WViLzRWLP4vtua4W7kWx+L2MlcWL8eWxN8wOt+fSNtYpAACwog0IIRLwVrBr40fuGF0vOUZFeyeGRjfpGnPK5kzRw73/Bf0AMDtcma7wzzd+/1rsXHuk69qPoiiUzWGPLdacb4ooTansFo6IH5iNP9paWf26P78vSZtsNkvozWAuHiWWC4WCM0itY/7xF3keDBegt3uFAAAAAElFTkSuQmCC");
 }
 
-form #listbox {
+section #listbox {
   background-color: #ebe9e9;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  padding: 20px 50px;
+  padding: 20px 30px;
   border: 1px rgba(255, 255, 255, 0.8) solid;
-  min-width: 300px;
+  width: 300px;
   min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,13 +330,13 @@ form #listbox {
   border-radius: 4px;
 }
 
-form #listbox:hover {
+section #listbox:hover {
   border: 1px rgba(0, 128, 0, 0.4) solid;
   -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
           box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
 }
 
-form #listbox legend {
+section #listbox legend {
   padding: 2px 6px;
   background: whitesmoke;
   font-size: 24px;
@@ -337,7 +344,7 @@ form #listbox legend {
   border: 1px rgba(0, 128, 0, 0.4) solid;
 }
 
-form #listbox select {
+section #listbox select {
   border: none;
   outline: none;
   padding: 7px 50px 7px 10px;

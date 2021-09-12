@@ -10,8 +10,6 @@ body {
   color: #171717;
   font-family: "Glory", sans-serif;
   padding: 20px;
-  width: 100vw;
-
 }
 a {
   text-decoration: none;
@@ -24,9 +22,9 @@ header {
   //   card header
   a {
     position: relative;
-    padding: 0 20px;
+    padding: 0 15px;
     margin: 0 auto;
-    width: 300px;
+    width: 260px;
     height: 150px;
     display: flex;
     align-items: center;
@@ -47,6 +45,10 @@ header {
       #image-wrapper {
         box-shadow: rgba(0, 128, 0, 0.3) 0 0 5px;
       }
+    }
+    @media all and (max-width:480px) {
+    width: 240px;
+        
     }
     // Card content
     div {
@@ -72,27 +74,28 @@ header {
       box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
 
       img {
-        width: 100px;
+        width: 80px;
       }
     }
   }
 }
 
-form {
+section {
+    
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 30px;
   flex-wrap: wrap;
-
+  
   //   title of Card area
 
   //   Radio Area
   #radio {
     background-color: rgb(235, 233, 233);
     backdrop-filter: blur(10px);
-    padding: 20px 50px;
+    padding: 20px 30px;
     border: 1px rgba(255, 255, 255, 0.8) solid;
-    min-width: 300px;
+    width: 300px;
     min-height: 150px;
     display: flex;
     flex-direction: column;
@@ -153,9 +156,9 @@ form {
   #checkbox {
     background-color: rgb(235, 233, 233);
     backdrop-filter: blur(10px);
-    padding: 20px 50px;
+    padding: 20px 30px;
     border: 1px rgba(255, 255, 255, 0.8) solid;
-    min-width: 300px;
+    width: 300px;
     min-height: 150px;
     display: flex;
     flex-direction: column;
@@ -197,9 +200,9 @@ form {
   #contact {
     background-color: rgb(235, 233, 233);
     backdrop-filter: blur(10px);
-    padding: 20px 50px;
+    padding: 20px 30px;
     border: 1px rgba(255, 255, 255, 0.8) solid;
-    min-width: 300px;
+    width: 300px;
     min-height: 150px;
     display: flex;
     flex-direction: column;
@@ -234,6 +237,7 @@ form {
     input[type="email"] {
       // icons download from https://icons8.com
       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAACDElEQVRIie3VPUhVYRzH8c9zvBQO0gs0RERhEE0JFRFFUqG9QFsILUV2jpGYQxFUUy5NDSEFivdqDdEiBUUJ9jJENEQZOBVBTkpBkBpRYHlOw72G1DUkHRr6juf/5/d9nv9zeB7+868RwFGbBFcEa+ctOfNG0KJgIGhQYZEhQasx9/SanLOgmLkf7catiSxVLZNaoW9eBNBr0ri7SC22JpJaIFhl2CPHLJ8XSaNlFrmP1VILotLnQcEtqRea1M1JcMwGFZ7JPMcgTEkyee04KNMj0abtZ232JA5L3RE063YW6XRJkYInJm3ENsNua7ZkVuGtFop14aRUrbz+6eXfV3vVB+P2YsCEl2Kb/yhotNIXjwWVItv0GPq1pfxIek0qaMN1wWOJuGxfol6FlxhWcEiXL+XaZp57k32CWCbGCYkeJ1WWqkHsHPKC44IasRMzRZWXxBpk8iL7dbuhylakPhmUuCTxVFAnZ7O8m3J2CFrETpeLy5URHBWcR70ur8AlX5FIbMQW9Cl4iAx0GnHETjkPJBYquDCzJNGCUyK7dHn72wIKBjBQdvfXvNes1jf9YlWlX/iXcTU5gxY5tWUFs6HDqO92Y4cmF5Uu4EhkAutlDpiwXaeRvxJMcc2YCntktqJGZCLy0RDeoUO18TkJphj1WZDHiDFvi+9J8UAvY928SIq8RmvpHP/zj/EDm4WUCEXu+1gAAAAASUVORK5CYII=");
+      margin-bottom: 20px;
     }
     input[type="telephone"] {
       // icons download from https://icons8.com
@@ -244,9 +248,9 @@ form {
   #listbox {
     background-color: rgb(235, 233, 233);
     backdrop-filter: blur(10px);
-    padding: 20px 50px;
+    padding: 20px 30px;
     border: 1px rgba(255, 255, 255, 0.8) solid;
-    min-width: 300px;
+    width: 300px;
     min-height: 150px;
     display: flex;
     flex-direction: column;

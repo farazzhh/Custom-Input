@@ -1,12 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100;200;300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link href="sass.css" rel="stylesheet" type="text/css" />
-
+  <title>Custom Inputs</title>
 </head>
 
 <body>
@@ -25,7 +29,7 @@
     </div>
   </header>
 
-  <form>
+  <section>
     <!-- Radio -->
     <fieldset id="radio">
       <legend>RadioType Area</legend>
@@ -49,30 +53,30 @@
     <fieldset id="checkbox">
       <legend>Checkbox Area</legend>
       <div>
-      <div class="input-label-wrap">
-        <input type="checkbox" id="first-checkbox" />
-        <label for="first-checkbox">First Checkbox</label>
+        <div class="input-label-wrap">
+          <input type="checkbox" id="first-checkbox" />
+          <label for="first-checkbox">First Checkbox</label>
+        </div>
+        <div class="input-label-wrap">
+          <input type="checkbox" id="second-checkbox" />
+          <label for="second-checkbox">Checkbox</label>
+        </div>
+        <div class="input-label-wrap">
+          <input type="checkbox" id="third-checkbox" />
+          <label for="third-checkbox">Third Checkbox</label>
+        </div>
       </div>
-      <div class="input-label-wrap">
-        <input type="checkbox" id="second-checkbox" />
-        <label for="second-checkbox">Checkbox</label>
-      </div>
-      <div class="input-label-wrap">
-        <input type="checkbox" id="third-checkbox" />
-        <label for="third-checkbox">Third Checkbox</label>
-      </div>
-    </div>
     </fieldset>
 
     <!-- Contact details -->
 
-      <fieldset id="contact">
-        <legend>Contact Info</legend>
-        <input type="email" placeholder="Email" />
-        <span class="tick"></span>
-        <input type="telephone" placeholder="Phone number" />
-        <span class="tick"></span>
-      </fieldset>
+    <fieldset id="contact">
+      <legend>Contact Info</legend>
+      <input type="email" placeholder="Email" />
+      <span class="tick"></span>
+      <input type="telephone" placeholder="Phone number" />
+      <span class="tick"></span>
+    </fieldset>
 
 
     <!-- Preferred -->
@@ -82,8 +86,8 @@
         <option>By email</option>
         <option>By telephone</option>
       </select>
-    </fieldset >
-  </form>
+    </fieldset>
+  </section>
 </body>
 
 </html>
