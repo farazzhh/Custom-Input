@@ -75,14 +75,14 @@ header a div span {
 }
 
 header a #image-wrapper {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   padding: 5px;
   border-radius: 50%;
   position: absolute;
-  top: -20%;
-  right: -50px;
+  top: -10%;
+  right: -30px;
   border: 1px rgba(0, 128, 0, 0.4) solid;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
           box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
@@ -99,14 +99,6 @@ form {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-form legend {
-  padding: 2px 6px;
-  background: whitesmoke;
-  font-size: 24px;
-  border-radius: 5px;
-  border: 1px rgba(0, 128, 0, 0.4) solid;
 }
 
 form #radio {
@@ -140,6 +132,14 @@ form #radio:hover {
           box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
 }
 
+form legend {
+  padding: 2px 6px;
+  background: whitesmoke;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+}
+
 form input[type="radio"] {
   opacity: 0;
   width: 0;
@@ -155,7 +155,7 @@ form label[for="second"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 2px;
+  gap: 4px;
   cursor: pointer;
 }
 
@@ -211,6 +211,14 @@ form #checkbox:hover {
           box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
 }
 
+form #checkbox legend {
+  padding: 2px 6px;
+  background: whitesmoke;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+}
+
 form #checkbox input {
   width: 0;
   opacity: 0;
@@ -227,7 +235,54 @@ form #checkbox input:checked + label {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAAA3ElEQVQ4jc3SMUrEQBQG4G+yKcxewMLjiLIXsLGRVQQLQRAsbG0jHsBreAE7i8BewVJs7JSVXTYWMTGgmY1p9K8yebxvXjLDf0tonk5sWbgQZD07XwW5W0+QNoUKOes9QqmwcFUvk9YO/SapUljaldj8DvXPTGliZCpxPhSaKe3gQHDTLvwG6kRi0APuW+vC0rZg+hMSgx5lJrhT/9jUEa67xk073u+be5HZ827DyDHyLiQGUTo1N8az4DKGxKEKO1wH1Blyj9ZCbwP6m56vT1vJP9lxb2QVP4C/zQd16S6S3PYq1QAAAABJRU5ErkJggg");
 }
 
-/* 3 - CHECKBOX STYLES  */
+form #contact {
+  background-color: #ebe9e9;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 20px 50px;
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  max-width: 300px;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+form #contact:hover {
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+  -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
+          box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
+}
+
+form #contact legend {
+  padding: 2px 6px;
+  background: whitesmoke;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+}
+
+form #contact input {
+  padding: 5px 10px 5px 40px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
+}
+
 /* 4 - TEXT INPUT STYLES & FIELDSETS */
 /* 5 - SELECT BOXES */
 /* 6 - INPUT VALIDATION STYLES */
