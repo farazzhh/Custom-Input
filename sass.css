@@ -28,7 +28,7 @@ header a {
   position: relative;
   padding: 0 15px;
   margin: 0 auto;
-  width: 260px;
+  width: 280px;
   height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +63,7 @@ header a:hover #image-wrapper {
           box-shadow: rgba(0, 128, 0, 0.3) 0 0 5px;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 350px) {
   header a {
     width: 240px;
   }
