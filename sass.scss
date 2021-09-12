@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 body {
   background-color: lightgray;
@@ -20,8 +20,8 @@ header {
   margin: 50px 0;
   text-align: center;
 
-//   card header
-   a {
+  //   card header
+  a {
     position: relative;
     padding: 0 20px;
     margin: 0 auto;
@@ -47,7 +47,7 @@ header {
         box-shadow: rgba(0, 128, 0, 0.3) 0 0 5px;
       }
     }
-    // Card content 
+    // Card content
     div {
       h1 {
         margin-bottom: 20px;
@@ -90,7 +90,7 @@ form {
     min-height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     border-radius: 4px;
@@ -100,7 +100,7 @@ form {
     }
   }
   p {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 
@@ -111,24 +111,30 @@ form {
     margin: 0;
   }
 
-  label[for="male"],
-  label[for="female"] {
-    margin-bottom: 10px;
-    padding-left: 26px;
-    font-weight: 600;
-    display: inline-block;
-    background-image: url("https://img.icons8.com/material-outlined/20/000000/checked-2--v2.png");
-    background-repeat: no-repeat;
-    line-height: 22px;
+  label[for="first"],
+  label[for="second"] {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
     cursor: pointer;
-    letter-spacing: -0.44px;
+    div {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: white;
+      border: 3px white solid;
+    }
   }
 
-  input:checked + label[for="male"],
-  input:checked + label[for="female"] {
-    background-image: url("https://img.icons8.com/material-outlined/20/000000/checked-2--v1.png");
-    text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
-    letter-spacing: 1px;
+  input:checked + label[for="first"],
+  input:checked + label[for="second"] {
+    div {
+      background: darkgreen;
+
+      // background-image: url("https://img.icons8.com/material-outlined/20/000000/checked-2--v1.png");
+      text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
+      letter-spacing: 1px;
+    }
   }
   .input-labet-wrap {
     margin-bottom: 15px;

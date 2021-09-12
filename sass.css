@@ -4,8 +4,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 body {
@@ -115,9 +115,9 @@ form > div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -132,7 +132,7 @@ form > div:hover {
 }
 
 form p {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -142,22 +142,31 @@ form input[type="radio"] {
   margin: 0;
 }
 
-form label[for="male"],
-form label[for="female"] {
-  margin-bottom: 10px;
-  padding-left: 26px;
-  font-weight: 600;
-  display: inline-block;
-  background-image: url("https://img.icons8.com/material-outlined/20/000000/checked-2--v2.png");
-  background-repeat: no-repeat;
-  line-height: 22px;
+form label[for="first"],
+form label[for="second"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2px;
   cursor: pointer;
-  letter-spacing: -0.44px;
 }
 
-form input:checked + label[for="male"],
-form input:checked + label[for="female"] {
-  background-image: url("https://img.icons8.com/material-outlined/20/000000/checked-2--v1.png");
+form label[for="first"] div,
+form label[for="second"] div {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 3px white solid;
+}
+
+form input:checked + label[for="first"] div,
+form input:checked + label[for="second"] div {
+  background: darkgreen;
   text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
   letter-spacing: 1px;
 }
