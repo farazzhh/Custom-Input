@@ -1,8 +1,16 @@
 /* 1 - BASE FORM STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: lightgray;
   color: #171717;
   font-family: "Glory", sans-serif;
+  padding: 20px;
 }
 
 a {
@@ -12,12 +20,14 @@ a {
 header {
   width: 100vw;
   margin: 50px 0;
+  text-align: center;
 }
 
-header div {
+header a > div {
+  padding: 0 10px;
   margin: 0 auto;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,38 +44,92 @@ header div {
   transition: all 0.2s;
 }
 
-div:hover {
-  -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
-          box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
-  border: 1px rgba(0, 128, 0, 0.4) solid;
+header a > div:hover {
+  -webkit-box-shadow: rgba(0, 128, 0, 0.3) 0 0 5px;
+          box-shadow: rgba(0, 128, 0, 0.3) 0 0 5px;
+}
+
+header a > div:hover span {
+  opacity: 1;
+  color: darkgreen;
+}
+
+header a > div div {
+  width: 50%;
+}
+
+header a > div div h1 {
+  margin-bottom: 20px;
+}
+
+header a > div div span {
+  opacity: 0.5;
+  color: lightslategrey;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 header img {
-  width: 200px;
+  width: 50%;
+  border-radius: 50%;
+  background: lightgray;
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+  padding: 5px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* 2 - RADIOBOX STYLES  */
+}
+
+form > div {
+  background-color: #ebe9e9;
+  margin: 30px auto;
+  padding: 20px 50px;
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  max-width: 300px;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+form > div:hover {
+  border: 1px rgba(0, 128, 0, 0.4) solid;
+  -webkit-box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
+          box-shadow: rgba(0, 128, 0, 0.5) 0 0 5px;
 }
 
 form p {
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
-#radio {
-  border: 1px rgba(0, 128, 0, 0.4) solid;
-  margin: auto;
-}
-
-#radio input {
-  display: inline-block;
-}
-
-/* 2 - RADIOBOX STYLES  */
-input[type="radio"] {
+form input[type="radio"] {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-label[for="male"],
-label[for="female"] {
+form label[for="male"],
+form label[for="female"] {
   margin-bottom: 10px;
   padding-left: 26px;
   font-weight: 600;
@@ -79,11 +143,15 @@ label[for="female"] {
   letter-spacing: -0.44px;
 }
 
-input:checked + label[for="male"],
-input:checked + label[for="female"] {
+form input:checked + label[for="male"],
+form input:checked + label[for="female"] {
   background-image: url("https://img.icons8.com/material-outlined/20/000000/checked-2--v1.png");
   text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
   letter-spacing: 1px;
+}
+
+form .input-labet-wrap {
+  margin-bottom: 15px;
 }
 
 /* 3 - CHECKBOX STYLES  */
